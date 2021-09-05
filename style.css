@@ -1,0 +1,29 @@
+#modal{
+    height:0px;
+    width:0px;
+    /* background-color: transparent; */
+    display:none;
+}
+#modal:target{
+    height:300px;
+    width:400px;
+    background-color: aqua;
+    display:block;
+    margin-left:30%;
+    animation:anim 1s linear forwards;
+}
+a{
+    font-size:18px;
+    text-decoration: none;
+}
+@keyframes anim {
+    0%{
+        opacity:0.1;
+        margin-top:-300px;
+    }
+    
+    100%{
+        opacity: 1;
+        margin-top:100px;
+    }
+}
